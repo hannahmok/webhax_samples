@@ -1,5 +1,5 @@
 #!/bin/bash
 
-for name in $(./names.sh); do
+for name in $(./names.sh $@); do
   docker kill demo-$name
 done
